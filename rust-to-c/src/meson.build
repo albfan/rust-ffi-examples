@@ -1,4 +1,5 @@
 add_project_arguments(['--vapidir', join_paths(meson.source_root(), 'vapi')], language: 'vala')
+add_project_arguments(['--pkg', 'utils'], language: 'vala')
 
 double_lib = static_library('double', 'double.c')
 
